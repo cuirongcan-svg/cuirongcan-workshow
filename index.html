@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rongcan 个人作品集 — UI 设计 · 网页设计 · 品牌视觉">
+    <title>Rongcan — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Grain texture -->
+    <div class="grain"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#" class="nav-logo">Rongcan</a>
+        <ul class="nav-links">
+            <li><a href="#ui" data-section="ui">UI 设计</a></li>
+            <li><a href="#web" data-section="web">网页设计</a></li>
+            <li><a href="#brand" data-section="brand">品牌视觉</a></li>
+            <li><a href="#about" data-section="about">关于</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <p class="hero-tag">Design Portfolio</p>
+        <h1>Rongcan</h1>
+        <p class="hero-sub">创造简洁、优雅、有温度的视觉体验。</p>
+        <p class="hero-scroll">↓ 浏览作品</p>
+    </section>
+
+    <!-- ====== UI 设计 ====== -->
+    <section class="category" id="ui">
+        <div class="category-header fade-in">
+            <span class="category-num">01</span>
+            <h2 class="category-title">UI 设计<span class="category-count"> / 5</span></h2>
+            <p class="category-desc">移动端与桌面端界面设计，追求极致的可用性与视觉平衡。</p>
+        </div>
+        <div class="works-grid grid-ui" id="gridUI"></div>
+    </section>
+
+    <div class="section-divider"><hr></div>
+
+    <!-- ====== 网页设计 ====== -->
+    <section class="category" id="web">
+        <div class="category-header fade-in">
+            <span class="category-num">02</span>
+            <h2 class="category-title">网页设计<span class="category-count"> / 5</span></h2>
+            <p class="category-desc">响应式网站与 Web 应用，兼顾美学表达与交互体验。</p>
+        </div>
+        <div class="works-grid grid-web" id="gridWeb"></div>
+    </section>
+
+    <div class="section-divider"><hr></div>
+
+    <!-- ====== 品牌视觉 ====== -->
+    <section class="category" id="brand">
+        <div class="category-header fade-in">
+            <span class="category-num">03</span>
+            <h2 class="category-title">品牌视觉<span class="category-count"> / 4</span></h2>
+            <p class="category-desc">品牌识别、视觉系统与延展设计，构建一致的品牌感知。</p>
+        </div>
+        <div class="works-grid grid-brand" id="gridBrand"></div>
+    </section>
+
+    <!-- About -->
+    <section class="about fade-in" id="about">
+        <div>
+            <p class="about-label">关于</p>
+            <p class="about-text">
+                专注于视觉设计与用户体验。追求极致的简洁与克制，相信好的设计是让复杂变得简单。
+            </p>
+        </div>
+        <div class="about-contact">
+            <p class="about-label">联系</p>
+            <p>Email: <a href="mailto:cuirongcan@gmail.com">cuirongcan@gmail.com</a></p>
+            <p style="margin-top:12px;color:#555;">© 2026 Rongcan</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <span>Rongcan Portfolio</span>
+        <span>All rights reserved</span>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <button class="lightbox-prev" id="lightboxPrev">‹</button>
+        <button class="lightbox-next" id="lightboxNext">›</button>
+        <img src="" alt="" id="lightboxImg" draggable="false">
+        <div class="lightbox-info">
+            <span class="lightbox-category-label" id="lightboxCategory"></span>
+            <span class="lightbox-counter" id="lightboxCounter"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
